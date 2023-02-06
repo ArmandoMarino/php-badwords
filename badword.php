@@ -1,6 +1,7 @@
 <?php
 $bad_word = $_GET['badword'];
 $paragraph = $_GET['paragraph'];
+$paragraph_censured = str_replace($bad_word, '****',$paragraph );
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ $paragraph = $_GET['paragraph'];
         <hr>
     <!-- CENSURED RESULT -->
     <h4>Paragrafo censurato</h4>
-        <p><?php echo $paragraph ?></p>
+        <p><?php echo $paragraph_censured ?></p>
         <p class="fst-italic">Il Paragrafo censurato è lungo </p>
     </div>
 </body>
