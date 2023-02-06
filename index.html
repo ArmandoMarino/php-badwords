@@ -11,8 +11,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
-<body>
-
+<body class="container-lg">
     <h4>BadWord Form</h4>
     <form action="badword.php" method="GET">
         <label for="badword">Parola da censurare</label>
@@ -23,6 +22,8 @@
             <label for="paragraph" class="form-label">Paragrafo</label>
             <textarea class="form-control" name="paragraph" rows="3"></textarea>
         </div>
+        <button type="submit" class="btn btn-primary">Invia</button>
+        <button type="submit" class="btn btn-secondary">Annulla</button>
     </form>
 </body>
 
