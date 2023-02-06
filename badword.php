@@ -12,6 +12,16 @@ $paragraph = $_GET['paragraph'];
     <title>badword_result</title>
 </head>
 <body>
-    
+    <!-- ORIGINAL RESULT -->
+    <div class="container-fluid">
+        <h4>Paragrafo originale</h4>
+        <p><?php echo $paragraph ?></p>
+        <p class="fst-italic">Il Paragrafo originale è lungo </p>
+        <hr>
+    <!-- CENSURED RESULT -->
+    <h4>Paragrafo censurato</h4>
+        <p><?php echo $paragraph ?></p>
+        <p class="fst-italic">Il Paragrafo censurato è lungo </p>
+    </div>
 </body>
 </html>
