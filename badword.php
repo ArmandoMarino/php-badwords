@@ -34,7 +34,7 @@ $paragraph_censured_length = strlen($paragraph_censured);
        <div class="card w-50 m-3 p-3">
             <h4 class="text-danger">Paragrafo censurato</h4>
             <p><?php echo $paragraph_censured ?></p>
-            <p class="fst-italic">Il Paragrafo censurato è lungo <?php echo $paragraph_censured_length ?>caratteri.</p>
+            <p class="fst-italic">Il Paragrafo censurato è lungo <?php echo $paragraph_censured_length ?> caratteri.</p>
        </div>
     </div>
 </body>
