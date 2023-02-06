@@ -2,6 +2,8 @@
 $bad_word = $_GET['badword'];
 $paragraph = $_GET['paragraph'];
 $paragraph_censured = str_replace($bad_word, '****',$paragraph );
+$paragraph_length = strlen($paragraph);
+$paragraph_censured_length = strlen($paragraph_censured);
 ?>
 
 <!DOCTYPE html>
@@ -17,12 +19,12 @@ $paragraph_censured = str_replace($bad_word, '****',$paragraph );
     <div class="container-fluid">
         <h4>Paragrafo originale</h4>
         <p><?php echo $paragraph ?></p>
-        <p class="fst-italic">Il Paragrafo originale è lungo </p>
+        <p class="fst-italic">Il Paragrafo originale è lungo <?php echo $paragraph_length ?> caratteri.</p>
         <hr>
     <!-- CENSURED RESULT -->
     <h4>Paragrafo censurato</h4>
         <p><?php echo $paragraph_censured ?></p>
-        <p class="fst-italic">Il Paragrafo censurato è lungo </p>
+        <p class="fst-italic">Il Paragrafo censurato è lungo <?php echo $paragraph_censured_length ?>caratteri.</p>
     </div>
 </body>
 </html>
